@@ -1,0 +1,136 @@
+header{
+  color: white;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  bordr: 1px solid;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 2.5rem;
+z-index: 100;
+transition: background-filter 0.3s,background-color 0.3s;
+
+}
+
+.header.scrolled{
+background-color: rgba(0, 0, 0, 0.5);
+-webkit-backdrop-filter: blur(10px);
+box-shdow: 0 4px 10px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(20px);
+
+}
+
+.header-left-container{
+  display: flex;
+  flex: 0.7;
+  flex-direction: row;
+ justify-content: center;
+ margin-right: 0.5em ;
+ margin-left: 0.5em ;
+ align-items: center;
+bordr: 1px solid;
+
+}
+
+
+.company-logo{
+ height: 1.4rem;
+ 
+ 
+}
+
+.company-name{
+  font-size: 0.6rem;
+  font-weight: 500;
+  white-space: nowrap;
+  
+}
+
+.middle-section{
+  flex: 3;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content:center;
+ font-size: 0.59rem;
+bordr: 1px solid;
+margin-right: 0.5em ;
+}
+
+
+
+.middle-section p,.sign-in-container p,.service-text3,
+.faceebook-icon, .footer-h2,.underline-translate, .blog, .translators {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.middle-section p:hover,.sign-in-container p:hover,
+.footer-h2:hover,.blog:hover, .translators:hover{
+color: #90f5df;
+}
+
+.service-text3:hover{
+  color: #020730;
+}
+
+
+.underline-translate{
+  transition: border-bottom 5px;
+}
+
+.underline-translate:hover{
+ display: inline-block;
+ margin-right: 5.5px;
+  border-bottom: 1px solid #90f5df;
+}
+
+
+.sign-in-container{
+  display: flex;
+  flex: 0.5;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5em ;
+  
+  
+}
+
+.sign-in{
+font-size: 0.59rem;
+white-space: nowrap;
+
+}
+
+.tooltip {
+position: absolute;
+bottom: -38px;
+text-align: center;
+border-radius: 4px;
+background-color: rgb(5, 15, 92);
+color: white;
+padding: 5px 7px;
+font-size: 0.6rem;
+pointer-events: none;
+opacity: 0;
+white-space: nowrap;
+transition: opacity 0.15s ease;
+
+
+}
+
+.sign-in:hover + .tooltip {
+  visibility: visible;
+  opacity: 1;}
+
+
+
+  
