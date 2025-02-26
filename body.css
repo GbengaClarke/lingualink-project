@@ -19,10 +19,10 @@ body{
 .section-1-text-container{
   color: white;
   position: absolute;
-  top: 27vh;
-  left: 10vh;
-  tp: 95px;
-  lft: 35px;
+  tp: 27vh;
+  lft: 10vh;
+  top: 95px;
+  left: 35px;
   width: 400px;
   font-family: Montserrat, arial;
 }
