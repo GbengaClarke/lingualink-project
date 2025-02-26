@@ -5,8 +5,7 @@ body{
 }
 
 .hero-picture{
-  height: vh;
-  height: 100vh;
+  height: 22rem;
   width: 100%;
   object-fit: cover;
  
