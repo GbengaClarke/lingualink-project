@@ -1,6 +1,7 @@
 body{
   margin: 0;
   background-color: #f1f1f1;
+  height: 100vh;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
@@ -59,10 +60,13 @@ padding: 0 2em;
 
 .section2-text-container{
  width: 50%;
+ width: 50vw;
+
 }
 
 .section2-image-container{
   width: 50%;
+  with: 30vw;
 }
 
 .h1-section2{
@@ -283,7 +287,7 @@ details[open] summary{
 }
 
 summary{
-  font-size: 0.63rem;
+  font-size: 0.6rem;
   font-weight: 700;
   cursor: pointer;
   transition: box-shadow 0.15s ease-in;
@@ -293,6 +297,10 @@ details p{
   font-size: 0.6rem;
   padding-top: 0.5em;
   
+}
+
+details[open] {
+  animation: slideDown 0.3s ease-in-out;
 }
 
 .form-text-container, .faq-container{
@@ -325,6 +333,10 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   border: 1px slid;
   backgrond-color: #00DEAF;
   padding: 0.8em;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   
 }
 
@@ -383,14 +395,17 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .country-container select {
-  font-size: 0.6rem;
+  font-sie: 100%;
+  font-size: 1.2vw;
   font-weight: 500;
-  padding: 0.4em;
+  padding: 0.4em 10.8em 0.4em 0.4em;
   width: 40%;
+  text-align: center;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
+  
   transition: background-color 0.15s;
   background-color: rgb(201, 199, 199);
   
@@ -398,10 +413,9 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
 .country-container{
   padding: 0.7em;
-  display: flex;
   gap: 0.5em;
-  align-items: center;
-  justify-content: left;
+  display: flex;
+  
   
 }
 
@@ -498,3 +512,113 @@ textarea:focus{
   border-color:#020730 ;
 }
 
+@media (max-width: 744px){
+  .service-text2{
+    font-size: 0.45rem;
+  }
+}
+
+@media (max-width: 696px){
+  .h1-section2{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 671px){
+  .service-text2{
+    font-size: 0.40rem;
+  }
+}
+
+.section2-text-container{
+  width: ;
+}
+
+@media (max-width: 628px){
+  .h1-section2{
+    font-size: 1.5rem;
+  }
+
+  .form-group input{
+    font-size: 0.45rem;
+    
+  }
+
+  .section2-text-container{
+    width: 60%;
+  }
+
+  .section2-image-container{
+    width: 40%;
+  }
+
+  select#country{
+    font-size: 8px ;
+  }
+}
+
+@media (max-width: 598px){
+  .h1-section2{
+    font-size: 1.4rem;
+  }
+
+  .service-text1{
+    font-size: 0.63rem;
+  }
+
+  .service-text2{
+    font-size: 0.39rem;
+  }
+
+  select#country{
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px){
+ .form-group input{
+  font-size: 0.4rem;
+ } 
+}
+
+@media (max-width: 525px){
+  .h1-section2{
+    font-size: 1.2rem;
+  }
+
+  .description-section3{
+   width: 92%; 
+  }
+
+  .your-professional-text{
+    width: 90%;
+  }
+
+  .footer-h1{
+    font-size: 0.6rem;
+  }
+
+  .footer-h2, .blogs-translators-container,.copyright-container{
+    font-size: 0.42rem;
+  }
+
+  .service-text1{
+    font-size: 0.58rem;
+  }
+
+  .arrow-image{
+    height: 80%;
+  }
+
+  summary{
+    font-size: 0.55rem;
+  }
+
+
+}
+
+@media (max-width: 488px){
+  .h1-section2{
+    font-size: 1.1rem;
+  }
+}
