@@ -656,6 +656,10 @@ textarea:focus{
     display: none;
   }
 
+  .section-1, .section-2{
+    height: 50vh;
+  }
+
   .form-group input {
     font-size: 0.55em;
   }
