@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  overfow-x: hidden;
   background-color: #f1f1f1;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
@@ -7,8 +8,27 @@ body{
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  
 }
+
+.mobile-middle-section{
+  position: absolute;
+  background-color: rgb(2, 7, 48);
+  border-radius: 0 0 0px 10px;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 101;
+  font-size: 0.7rem;
+  line-height: 2;
+  padding: 1rem;
+  opacity:0;
+}
+
+.hamburger-button:active .mobile-middle-section{
+  opacity: 1;
+} 
 
 .hero-picture{
   height: 22rem;
@@ -258,7 +278,8 @@ transition: color 0.15s;
 
 .section-4-right-section{
   width: 50%;
-   max-height:270px; /*convert to rem */
+   mx-height:270px; /*convert to rem */
+   hight:16.4rem;
   margin-right: 0.8em;
   border-radius: 10px;
   background-color: rgb(231, 231, 231);
@@ -426,7 +447,8 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: end;
-  boder: 1px solid;
+  brder: 1px solid;
+  width: 80px;
 }
 
 .submit-container input{
@@ -644,9 +666,19 @@ textarea:focus{
   }
 }
 
+@media (max-width: 435px){
+  *{
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 415px){
   .header{
-    height: 3rem;
+    height: 3.5rem;
+  }
+
+  *{
+    box-sizing: border-box;
   }
 
   .company-logo{
@@ -654,7 +686,7 @@ textarea:focus{
   }
 
   .company-name{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .middle-section{
@@ -662,7 +694,8 @@ textarea:focus{
   }
 
   .section-1, .section-2{
-    height: 50vh;
+    hight: 360px
+    
   }
 
   .form-group input {
@@ -679,43 +712,57 @@ textarea:focus{
     flex-direction: column;
   justify-content: space-evenly;
   align-items:center;
-  border: 1px solid red;
     
   }
 
   .triple-service-container{
-    width: 47%;
+    width: 60%;
   }
   
   .service-text1{
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   
   .service-text2{
-    width: 85%;
-    font-size: 0.55rem;
+    width: 90%;
+    font-size: 0.7rem;
   }
   
   .service-text3{
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   }
 
   .section-4{
     flex-direction: column;
-    border: 1px solid green;
+    brder: 1px solid green;
+    margin-top: 0.7em;
   }
   
   .section-4-left-section{
     width: 100%;
     margin: 0;
-    border: 1px solid red;
+    boder: 1px solid red;
     margin: 0px;
+    padding:1.4rem 1.4rem 1.4rem 1.4rem ;
+    
   }
+
+  summary, details p{
+    font-size: 0.7rem;
+  }
+
+  .last-detail{
+    display: block ; 
+  }
+
   
   .section-4-right-section{
     width: 100%;
     margin: 0px;
+    border-radius: 0;
+    padding:1.4rem 1.4rem 1.4rem 1.4rem ;
+    overflw-y: hidden;
   }
   
   .faq-container{
@@ -726,6 +773,14 @@ textarea:focus{
     width: 30%;
   }
 
+  .contact-us-text{
+    font-size: 1rem;
+  }
+
+  .form-h2-text{
+    font-size: 0.7rem;
+  }
+
   .header-left-container{
     borer: 1px solid;
     flex: 1;
@@ -733,16 +788,18 @@ textarea:focus{
     align-items: center;
   }
 
+
   .sign-in-container{
-    boder: 1px solid;
+    borer: 1px solid;
     flex: 1;
     justify-content: right;
     gap: 20px;
+    overflow: hidden;
     
   }
 
   .sign-in{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .hamburger-button{
@@ -761,5 +818,65 @@ textarea:focus{
 
   .header{
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .section-1-text-container{
+    display: flex;
+    flex-direction: column;
+    left: 1.5rem;
+  }
+
+  .hero-h1-text, .hero-h2-text{
+    backgrund-color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.987);;
+  }
+
+  .hero-h2-text{
+    font-size: 0.7rem;
+  }
+
+  .section2-text-container{
+    width: 70%;
+  }
+
+  .section2-image-container{
+    width: 30%;
+  }
+
+  .h1-section2{
+    font-size: 1.2rem;
+  }
+
+  .h2-section2{
+    font-size: 0.7rem;
+  }
+
+  .section-3{
+   borer: 1px solid;
+   margin-top: 0px; 
+  }
+
+  .section2-first-portion-container{
+    padding:1.6rem 1.6rem 0 1.6rem;
+  }
+
+  footer{
+    margin-top: 0px;
+  }
+
+  .form-container{
+    padding: 1.4rem 0;
+  }
+
+  .grid{
+    column-gap: 30px;
+  }
+
+  .form-group label,.submit-container input, .country-container label{
+    font-size: 0.7rem;
+  }
+
+  .submit-container input{
+    border-radius: 7px;
   }
 }
