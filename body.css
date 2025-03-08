@@ -807,8 +807,8 @@ textarea:focus{
   }
 
   .hamburger-button{
-    width: 1.7em;
-    height: 1.7em;
+    width: 2em;
+    height: 2em;
     background: transparent;
     border: none;
     cursor: pointer;
