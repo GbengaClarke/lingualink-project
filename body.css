@@ -900,15 +900,16 @@ textarea:focus{
 
   .first-section-of-footer-container{
     display: grid;
-    column-gap: 40px;
-    padding-left: 2em;
+    column-gap: 50px;
+    padding-left: 1em;
     grid-template-columns: repeat(2, 1fr);
     
   }
 
   .footer-logo-company-container{
-    borer: 1px solid; 
+    brder: 1px solid; 
     align-self: start;
+    width: 100%;
   }
 
   .blogs-translators-container{
@@ -930,11 +931,11 @@ textarea:focus{
   }
 
   .footer-company-logo{
-    
   }
 
   .footer-company-name{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
    
   }
 
@@ -947,7 +948,7 @@ textarea:focus{
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
+    column-gap: 50px;
     align-items: start;
   }
 
@@ -962,7 +963,7 @@ textarea:focus{
   .footer-row2-container{
     line-height: 1.8;
     padding-top: 1.5em;
-    padding-left: 2em;
+    padding-left: 1em;
   }
 
   .copyright-container{
