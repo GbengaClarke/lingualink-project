@@ -949,6 +949,7 @@ textarea:focus{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
+    row-gap: 20px;
     align-items: start;
   }
 
