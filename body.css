@@ -989,6 +989,7 @@ textarea:focus{
 
   .high-quality-text{
     font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   .your-professional-text{
