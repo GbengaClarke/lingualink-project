@@ -666,19 +666,14 @@ textarea:focus{
   }
 }
 
-@media (max-width: 435px){
-  *{
-    overflow-x: hidden;
-  }
-}
-
-@media (max-width: 415px){
+@media (max-width: 450px){
   .header{
     height: 3.5rem;
   }
 
   *{
     box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .company-logo{
@@ -686,7 +681,7 @@ textarea:focus{
   }
 
   .company-name{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .middle-section{
@@ -769,8 +764,16 @@ textarea:focus{
     font-size: 0.7rem;
   }
 
+  .faq-container p{
+    font-size: 1.1rem;
+  }
+
+  summary, details p{
+    font-size: 1rem;
+  }
+
   select#country{
-    width: 30%;
+    font-size: 0.7rem;
   }
 
   .contact-us-text{
@@ -778,7 +781,7 @@ textarea:focus{
   }
 
   .form-h2-text{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .header-left-container{
@@ -790,25 +793,30 @@ textarea:focus{
 
 
   .sign-in-container{
-    borer: 1px solid;
+    boder: 1px solid;
     flex: 1;
     justify-content: right;
     gap: 20px;
     overflow: hidden;
+    padding-right: 10px;
     
   }
 
   .sign-in{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .hamburger-button{
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.7em;
+    height: 1.7em;
     background: transparent;
     border: none;
     cursor: pointer;
     display: block;
+  }
+
+  .translate-text{
+    font-size: 1rem;
   }
 
   .hamburger-image{
@@ -832,15 +840,18 @@ textarea:focus{
   }
 
   .hero-h2-text{
-    font-size: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    width: 95%;
+    
   }
 
   .section2-text-container{
-    width: 70%;
+    width: 75%;
   }
 
   .section2-image-container{
-    width: 30%;
+    width: 25%;
   }
 
   .h1-section2{
@@ -848,16 +859,19 @@ textarea:focus{
   }
 
   .h2-section2{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
+.section3-first-portion-container{
+  line-height: 1.2;
+}
   .section-3{
    borer: 1px solid;
    margin-top: 0px; 
   }
 
   .section2-first-portion-container{
-    padding:1.6rem 1.6rem 0 1.6rem;
+    padding:1.6rem 1.6rem 0.5rem 1.6rem;
   }
 
   footer{
@@ -873,10 +887,114 @@ textarea:focus{
   }
 
   .form-group label,.submit-container input, .country-container label{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .submit-container input{
     border-radius: 7px;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  .first-section-of-footer-container{
+    display: grid;
+    column-gap: 40px;
+    padding-left: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .footer-logo-company-container{
+    borer: 1px solid; 
+    align-self: start;
+  }
+
+  .blogs-translators-container{
+    boder: 1px solid;
+    justify-content: left;
+    display: flex;
+    padding: 0;
+    line-height: 1;
+    gap: 20px;
+    align-self: start;
+    
+  }
+
+  .icons-container{
+    boder: 1px solid;
+    margin-top: -15px;
+    justify-content: center;
+    justify-content: left;
+  }
+
+  .footer-company-logo{
+    
+  }
+
+  .footer-company-name{
+    font-size: 0.8rem;
+   
+  }
+
+  .translators,.blog{
+    font-size: 0.8rem;
+    
+  }
+
+  .footer-row2-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    align-items: start;
+  }
+
+  .footer-h1{
+    font-size: 1rem;
+  }
+
+  .footer-h2{
+    font-size: 0.8rem;
+  }
+
+  .footer-row2-container{
+    line-height: 1.8;
+    padding-top: 1.5em;
+    padding-left: 2em;
+  }
+
+  .copyright-container{
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
+
+  .high-quality-text{
+    font-size: 0.9rem;
+  }
+
+  .your-professional-text{
+    font-size: 1.1rem;
+  }
+
+  .description-section3{
+    font-size: 1rem;
+  }
+
+  .triple-service-container{
+    width: 70%;
+  }
+
+  .service-text1{
+    font-size: 1.1rem;
+  }
+
+  .service-text2{
+    font-size: 1rem;
+  }
+
+  .service-text3{
+    font-size: 1rem;
   }
 }
